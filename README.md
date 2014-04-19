@@ -31,13 +31,15 @@ plugins for a project. See the [Tern docs][docs] for details.
 
 [docs]: http://ternjs.net/doc/manual.html#configuration
 
-To get this plugin to work, add all your JAVASCRIPT files to the "loadEagerly" list in your .tern-project
+To get autocompletion from multiple sources, add COMPILED .js files (not .coffee) to the "loadEagerly" list in your .tern-project
 
     "loadEagerly": [
-        "*.js"
+        "*.js",
+        "anotherFolder/*.js"
     ]
 
 This is a bit limited and wont work as well as the original plugin, but its still useful.
+
 
 ### Automatically Showing Completions
 
